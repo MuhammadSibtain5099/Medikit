@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Medikit.All_Set"
+    android:background="@drawable/download">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:text="You're all set"
+        android:fontFamily="@font/bungee_inline"
+        android:textSize="30dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="280dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:lottie_fileName="congrate_pop.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign in to continue"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        ></TextView>
+    <Button
+        android:id="@+id/btn_all_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:paddingHorizontal="50dp"
+        android:background="@drawable/custom_button"
+        ></Button>
+</RelativeLayout>

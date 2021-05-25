@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download1"
+    android:hapticFeedbackEnabled="true"
+    tools:context="com.example.Medikit.Login"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:weightSum="1.5" >
+<LinearLayout
+    android:weightSum="1.5"
+    android:layout_width="350dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/txtslogonname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/bungee_inline"
+        android:gravity="center_horizontal"
+        android:text="LOGIN FORM"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:transitionName="transition0" />
+</LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtlogoname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:includeFontPadding="false"
+            android:text="Sign in to continue"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:transitionName="transition1" />
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="username"
+            android:transitionName="transition2"
+            android:background="@drawable/custom_txt"
+            app:endIconDrawable="@drawable/ic_baseline_person_pin_24"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_baseline_person_pin_24">
+        </EditText>
+
+
+
+        <EditText
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="50dp"
+            android:background="@drawable/custom_txt"
+            android:hint="password"
+            android:transitionName="transition3"
+            app:passwordToggleEnabled="true"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/lock"
+            android:inputType="textPassword">
+
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="20dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textAlignment="textEnd"
+            android:transitionName="transition4"
+            tools:ignore="RtlCompat"></Button>
+
+        <Button
+            android:id="@+id/btnproceed"
+            android:onClick="register_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Proceed"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:transitionName="transition5"></Button>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:textAlignment="textEnd"
+            android:text="New user? Sign Up"
+            android:textColor="@color/black"
+            android:transitionName="transition6"
+            tools:ignore="RtlCompat"></Button>
+
+</LinearLayout>
